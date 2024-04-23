@@ -1,0 +1,425 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700;800&family=Roboto:wght@100;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
+:root {
+    --main-color:#F57EB6;
+    --black: #13131a;
+    --bg: #ffffff;
+    --border: 0.1rem solid rgba(255, 255, 255, 0.3);
+    font-size: 10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2s linear;
+    font-family: 'Outfit', sans-serif;
+}
+
+body {
+    background-color: var(--bg);
+}
+
+section {
+    padding: 3rem 2rem;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    border-bottom: var(--border);
+    background-color: rgba(255, 255, 255, 0.906)
+}
+
+.header section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+}
+
+
+.navbar { 
+   margin-left: 45%;
+}
+
+
+.navbar a {
+    margin: 0 1rem;
+    font-size: 1.8rem;
+    color: #ff9dbc;
+    font-family:'Architects Daughter', cursive ;
+}
+
+.navbar a:hover {
+    color:  #f65a8c;
+    border-bottom: 0.1rem solid var(--main-color);
+    padding-bottom: 0.5rem;
+    font-size: 2rem;
+}
+
+
+.icons img {
+    margin: 1rem;
+    cursor: pointer;
+    
+}
+
+.icons img:hover {
+    width: 40px;
+    height: 40px;
+}
+
+.btn {
+    background: var(--main-color);
+    background-image: linear-gradient(to right, #e281af,#f675b1 ,#d46c9c,#c05486);
+    color: #fff;
+    padding: 1rem 3rem;
+    font-size: 1.7rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    display: inline-block;
+    text-transform: none;
+    font-family:'Architects Daughter', cursive ;
+    border-radius: 3px;
+    animation: rainbow-tremor-animation 10s infinite;
+    
+}
+
+
+.btn:hover {
+    letter-spacing: 0.1rem;
+}
+
+
+.btnSobre {
+    background: var(--main-color);
+    background-image: linear-gradient(to right, #F57EB6,#1c5191af ,#1b31579f,#c05486);
+    color: #fff;
+    padding: 1rem;
+    font-size: 1.7rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    display: inline-block;
+    text-transform: none;
+    font-family:'Architects Daughter', cursive ;
+    border-radius: 3px;
+    animation: rainbow-tremor-animation 10s infinite;
+    
+}
+
+@keyframes rainbow-tremor-animation {
+    0% {
+      background-position: 0% 50%;
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(-2px);
+    }
+    75% {
+      transform: translateX(2px);
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+  }
+
+.btnSobre:hover {
+    letter-spacing: 0.1rem;
+}
+
+.btnCar {
+    background: var(--main-color);
+    color: #fff;
+    padding: 1rem 2rem;
+    font-size: 1.7rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    display: inline-block;
+    text-transform: none;
+    font-family:'Architects Daughter', cursive ;
+    border-radius: 7px;
+}
+
+.btnCar:hover {
+    letter-spacing: 0.1rem;
+}
+
+
+.home-container {
+    background: url("./img/home-img.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.home-container section {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.content {
+    max-width: 60rem;
+    margin-top: 10em;
+    
+}
+
+.content h3 {
+    color:  #d9577e;
+    font-size: 6rem;
+    text-transform: none;
+    animation: flutuacao 5s infinite ease-in-out;
+    
+}
+
+
+@keyframes flutuacao {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px); /
+    }
+}
+
+
+.content p {
+    color: #000000;
+    font-size: 2rem;
+    font-weight: 100;
+    line-height: 1.8;
+    padding: 1rem 0;
+    text-transform: none;
+    font-family:'Architects Daughter', cursive ;
+    animation: rightSideAni 2s ease forwards;    
+}
+
+@keyframes rightSideAni {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+
+
+.title {
+    font-size: 4rem;
+    color: var(--black);
+    text-align: center;
+    margin-bottom: 4rem;
+    font-family:'Architects Daughter', cursive ;
+    animation: flutuacao 3s infinite ease-in-out;
+    
+}
+
+
+@keyframes flutuacao {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px); /
+    }
+}
+
+.title span {
+    color: #F57EB6;
+    font-family:'Architects Daughter', cursive ;
+}
+
+.sobreImg {
+    border-radius: 7px;
+    margin: 1px;
+}
+
+.sobre .row {
+    display: flex;
+    align-items: center;
+    background-color: var(--black);
+    gap: 1.5rem;
+    border-radius: 10px;
+    animation: rightSideAni 2s ease forwards;
+    
+}
+
+@keyframes rightSideAni {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+.sobre .row .content {
+    padding: 2rem;
+}
+
+.sobre .row .content h3 {
+    font-size: 3rem;
+    color: #fff;
+}
+
+.sobre .row .content p {
+    font-size: 1.6rem;
+    color: #fff;
+    padding: 1rem 0;
+    line-height: 1.8;
+}
+
+.box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.menu .box-container .box {
+    text-align: center;
+    border: var(--border);
+    padding: 5rem;
+    cursor: pointer;
+    border: 1px solid #d4cdd2d0;
+    border-radius: 7px;
+    background-color: #f7eef1f7;
+}
+
+.menu .box-container .box img {
+    height: 10rem;
+}
+
+.menu .box-container .box h3 {
+    color: #0c0c0c;
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+
+.menu .box-container .box .price {
+    color: #070707;
+    font-size: 2.5rem;
+    padding: 0.5rem 0;
+}
+
+.menu .box-container .box .price span {
+    font-size: 1.5rem;
+    text-decoration: line-through;
+    font-weight: 100;
+}
+
+.menu .box-container .box:hover {
+    background-color: #f57eb62b;
+}
+
+.menu .box-container .box:hover>* {
+    color: var(--black);
+}
+
+.avaliacao .box-container .box {
+    border: var(--border);
+    text-align: center;
+    padding: 3rem 2rem;
+}
+
+.avaliacao .box-container .box p {
+    font-size: 1.5rem;
+    color: #0b0b0b;
+    padding: 2rem 0;
+    line-height: 1.8;
+    text-transform: none;
+}
+
+.avaliacao .box-container .box h3 {
+    color: #070707;
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+.avaliacao .box-container .box .cliente {
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+}
+
+.stars {
+    margin: 0 auto;
+    border-radius: 50px;
+    width: 180px;
+    border: 2px solid #F57EB6;
+    
+}
+
+.endereco {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer {
+    text-align: center;
+}
+
+
+.footer .redes img{
+    margin: 0.3rem;
+    cursor: pointer;
+    padding: 1rem;
+    background-color: var(--main-color);
+    border-radius: 30px;
+    width: 35px;
+    margin-top: 10px;
+}
+
+.footer .redes img:hover{
+    background-color: #f37299;
+}
+
+
+
+@media screen and (max-width: 780px) {
+
+    .navbar {
+        display: none;
+    }
+
+
+.home-container {
+    margin-top: 25%;
+}
+
+.row {
+display: grid;
+flex-direction: column;
+}
+
+.sobreImg {
+    max-width: 100%;
+    margin-top: 10px;
+    border-radius: 10px;
+    width: 300px;
+}
+
+.content {
+    margin-top: 1px;
+}
+
+}
